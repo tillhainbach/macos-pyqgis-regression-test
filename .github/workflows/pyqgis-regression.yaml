@@ -13,7 +13,7 @@ jobs:
       - name: Change Brew Tap
         run: |
           mkdir -p `brew --repo`/Library/Taps/qgis-casks/
-          mv ./homebrew-qgis-casks `brew --repo`/Library/Taps/qgis-casks/homebrew-qgis-casks
+          cp -r ./homebrew-qgis-casks `brew --repo`/Library/Taps/qgis-casks/homebrew-qgis-casks
 
       - name: Install QGIS
         run: brew install --cask qgis-ltr-3.16
