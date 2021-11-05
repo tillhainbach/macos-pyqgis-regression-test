@@ -11,7 +11,7 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Change Brew Tap
-        run: brew tap tillhainbach/macos-pyqgis-regression-test
+        run: brew tap https://github.com/tillhainbach/macos-pyqgis-regression-test
 
       - name: Install QGIS
         run: brew install --cask Casks/qgis-ltr-3.16
