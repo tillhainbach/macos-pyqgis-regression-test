@@ -10,11 +10,11 @@ jobs:
       - name: Checkout repo
         uses: actions/checkout@v2
 
-      - name: Change Brew Tab
-        run: brew tab macos-pyqgis-regression-test/homebrew-formulae
+      - name: Change Brew Tap
+        run: brew tap macos-pyqgis-regression-test/homebrew-formulae
 
       - name: Install QGIS
-        run: brew install --cask qgis-ltr-3.16
+        run: brew install --cask Casks/qgis-ltr-3.16
       
       - name: Test PyQGIS
         run: bash qgis_test_script.sh LTR-3.16
