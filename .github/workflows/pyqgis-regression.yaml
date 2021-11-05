@@ -11,7 +11,7 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Change Brew Tap
-        run: brew tap tillhainbach/qgis-casks
+        run: mv ./homebrew-qgis-cask `brew --repo`/Library/Taps/qgis-casks/homebrew-qgis-cask
 
       - name: Install QGIS
         run: brew install --cask qgis-ltr-3.16

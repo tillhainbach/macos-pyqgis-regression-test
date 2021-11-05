@@ -12,6 +12,8 @@ export PYTHONPATH=/Applications/QGIS$QGIS_VERSION.app/Contents/Resources/python
 #export QT_QPA_PLATFORM_PLUGIN_PATH=/Applications/QGIS$QGIS_VERSION.app/Contents/PlugIns/platforms/
 
 # check correct python bin is used
+echo "Using PATH=$PATH"
+echo "Using PYTHONPATH=$PYTHONPATH"
 echo "Using python3 from $(which python3)"
 
 # run start_app() from qgis.testing which uses initGUI(). Should print "Application state:..."
